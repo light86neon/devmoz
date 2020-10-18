@@ -11,16 +11,33 @@
 <h1>A high-level definition</h1>
 <body>
   <p>Player 1: Chris</p>
-
+  <button class='btn'>Click me</button>
   <script>
+//First script - change Chris to your name first script - 
 const para = document.querySelector('p');
 
 para.addEventListener('click', updateName);
 
 function updateName() {
   let name = prompt('Enter a new name');
-  para.textContent = 'Player 1: ' + name;
+  para.textContent = 'Player 1: ' + name; 
 }
+
+//Secpn script : - just add text after press button : 'Ти натиснув кнопку!' - 
+
+document.addEventListener("DOMContentLoaded", function() {
+  function createParagraph() {
+    let para = document.createElement('p');
+    para.textContent = 'Ти натиснув кнопку!';
+    document.body.appendChild(para);
+  }
+
+  const buttons = document.querySelectorAll('button');
+
+  for(let i = 0; i < buttons.length ; i++) {
+    buttons[i].addEventListener('click', createParagraph);
+  }
+});
   </script>
 </body>
 </html>     
