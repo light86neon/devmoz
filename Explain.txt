@@ -1,0 +1,40 @@
+інтерфейси прикладного програмування ( API ) 
+Application Programming Interfaces (APIs):
+
+*DOM (Document Object Model) APIдозволяє вам маніпулювати HTML та CSS
+
+*Geolocation APIОтримує географічну інформацію. Ось як
+ Google Maps може знайти ваше місцезнаходження та нанести його на карту.
+
+*CanvasІ WebGLAPI - інтерфейси дозволяють створювати анімовані 2D і 3D графіки. 
+
+*Аудіо та відео API люблять HTMLMediaElementі WebRTC
+
+just-in-time compiling
+
+Розбір другого скрипта :
+
+ 1.function createParagraph() {
+ 2. let para = document.createElement('p');
+ 3. para.textContent = 'You clicked the button!';
+ 4. document.body.appendChild(para);
+ 5. }
+ 6.
+ 7.const buttons = document.querySelectorAll('button');
+ 8.
+ 9.for(let i = 0; i < buttons.length ; i++) {
+ 10. buttons[i].addEventListener('click', createParagraph);
+ 11.}
+
+ 1- ф-ція - її назва (аргументи не задані) {
+ 2. обявлена змінна під назвою пара =  шлях через ДОМ - документ. сворення елемента (з тегом 'p');
+ 3. para. властивості зміни текстового вмісту = 'Сам текст'.
+ 4. Дом- документ.боді.аппендчайлд-це метод функції (наша змінна пара).
+ 5. закриваєм функцію
+ 6. 
+ 7. константа з назвою buttons =  Дом. документ.пошукВсіхСелекторів('button');
+ 8.
+ 9.циклом фор( створюєм змінну і яка на початку дорівнює 0, і меньша buttons.length - довжині
+const buttons; на кожній ітерації додаєм і.
+ 10. buttons з індексом [i] додаєм оброблювач кожної події (при натиску 'click' , створюємПараграф)
+createParagraph - тобто викликаєм нашу функцію вказуючи назву ф-ції;
